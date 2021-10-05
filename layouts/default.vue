@@ -1,29 +1,11 @@
 <template>
-  <div class="max-w-2xl mx-auto px-4">
-    <nav>
-      <div class="left pt-3">
-        <h2 class="brand text-4xl font-bold text-black pt-3 mb-3">
-          Hey! I'm Marco Ledesma :)
-        </h2>
-        <div class="links mb-4">
-          <ul class="flex flex-row">
-            <li>
-              <a href="#" class="p-2 mr-2 bg-green-100 text-green-800 rounded"
-                >Me</a
-              >
-            </li>
-            <li>
-              <a href="#" class="p-2 mr-2 text-gray-600">Projects</a>
-            </li>
-            <li>
-              <a href="#" class="p-2 text-gray-600"> Links and such </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="right"></div>
+  <div class="bg-white grid grid-cols-4">
+    <nav class="sidebar">
+      <h5 class="brand text-lg font-bold text-gray-500">
+        Marco Ledesma.site
+      </h5>
     </nav>
-    <div class="container mx-auto">
+    <div class="content">
       <Nuxt />
     </div>
   </div>
@@ -38,3 +20,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.sidebar {
+  @apply hidden lg:block bg-gray-100 h-screen col-span-1 pl-8 2xl:pl-32 pt-12;
+}
+
+.content {
+  @apply h-screen overflow-scroll col-span-4 lg:col-span-3 px-0 md:px-2 2xl:px-12 2xl:pr-52;
+}
+</style>
