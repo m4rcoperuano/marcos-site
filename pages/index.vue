@@ -17,7 +17,6 @@
       <div class="grid lg:grid-cols-2 gap-4 mb-4">
         <large-tech-card
           title="Laravel"
-          background-class-name="border-red-100"
           title-class-name="text-red-600"
           :image-src="require('~/assets/images/laravel-400-logo.png')"
         >
@@ -33,7 +32,6 @@
 
         <large-tech-card
           title="Vue"
-          background-class-name="border-green-100"
           title-class-name="text-green-600"
           :image-src="require('~/assets/images/vue-400-logo.png')"
         >
@@ -50,7 +48,6 @@
         <large-tech-card
           :image-src="require('~/assets/images/dot-net-300-logo.png')"
           title=".NET Core (C#)"
-          background-class-name="border-purple-100"
           title-class-name="text-purple-600"
         >
           <p>
@@ -64,43 +61,37 @@
 
     <div>
       <h4 class="text-2xl mb-4 text-gray-800">
-        Honorable Mentions
+        Other Technologies
       </h4>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <small-tech-card
           :image-src="require('~/assets/images/forge-400-logo.png')"
           title="Forge"
-          background-class-name="bg-gray-100"
           title-class-name="text-gray-600"
         />
         <small-tech-card
           :image-src="require('~/assets/images/tailwind-400-logo.png')"
           title="Tailwind CSS"
-          background-class-name="bg-blue-100"
           title-class-name="text-blue-600"
         />
         <small-tech-card
           :image-src="require('~/assets/images/sql-400-logo.png')"
           title="SQL"
-          background-class-name="bg-yellow-100"
           title-class-name="text-yellow-600"
         />
         <small-tech-card
           :image-src="require('~/assets/images/swift-400-logo.png')"
           title="Swift"
-          background-class-name="bg-red-100"
           title-class-name="text-red-600"
         />
         <small-tech-card
           :image-src="require('~/assets/images/storybook-300-logo.png')"
           title="Storybook"
-          background-class-name="bg-pink-100"
           title-class-name="text-pink-600"
         />
         <small-tech-card
           :image-src="require('~/assets/images/react-400-logo.png')"
           title="React Native"
-          background-class-name="bg-blue-100"
           title-class-name="text-blue-400"
         />
       </div>
